@@ -40,15 +40,122 @@
   </head>
   <body>
     <!--==================== HEADER ====================-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="./favicon_io (1)/favicon-32x32.png"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Featured</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="uil uil-times"></i>
+          </div>
+        </div>
+        <!-- Toggle button -->
+        <div class="nav__toggle" id="nav--toggle">
+          <i class="uil uil-align-center"></i>
+        </div>
+      </nav>
+    </header>
 
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">Choose The Best Car</h1>
+            <h2 class="home__subtitle">RZ 450e</h2>
+            <h3 class="home__elec">
+              <i class="uil uil-bolt-alt"></i>Electric car
+            </h3>
+          </div>
+          <img
+            src="https://toyota.scene7.com/is/image/toyota/lexus-rz-technology-desktop-1440x800-LEX-RZV-MY23-0016?wid=1440&hei=800"
+            alt="./image/electric_car.webp"
+            class="home__img"
+          />
+          <div class="home__car">
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="uil uil-dashboard"></i>
+              </div>
+              <h2 class="home__car-number">160 km/h</h2>
+              <h3 class="home__car-name">TOP SPEED</h3>
+            </div>
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="uil uil-battery-bolt"></i>
+              </div>
+              <h2 class="home__car-number">75.0 kWh</h2>
+              <h3 class="home__car-name">BATTERY CAPACITY</h3>
+            </div>
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="uil uil-plug"></i>
+              </div>
+              <h2 class="home__car-number">12h45m</h2>
+              <h3 class="home__car-name">CHARGE TIME (0->350 km)</h3>
+            </div>
+          </div>
+          <a href="#" class="home__button">START</a>
+        </div>
+      </section>
 
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about"></section>
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__group">
+            <img
+              src="https://toyota.scene7.com/is/image/toyota/lexus-rz-design-desktop-1440x800-LEX-RZV-MY23-0012?wid=1440&hei=800"
+              alt="lexus__features"
+              class="img__about"
+            />
+            <div class="about__card">
+              <h3 class="about__card-title">$52,000</h3>
+              <p class="about__card-description">
+                As the first globally available dedicated battery electric
+                vehicle from Lexus.
+              </p>
+            </div>
+          </div>
+          <div class="about__data">
+            <h2 class="sectio__title about__title">
+              THE FUTURE IS ALL-ELECTRIC
+            </h2>
+            <p class="about__description">
+              The front cockpit’s design advances the human-centered philosophy
+              of Lexus. Inspired by the tazuna reins favored by traditional
+              Japanese equestrians, the steering wheel features switches that
+              are precisely synced with the available Head-Up Display, creating
+              a space where drivers can control various functions such as
+              navigation, audio, and drive mode select while concentrating on
+              driving.
+            </p>
+            <a href="#" class="button">Know More</a>
+          </div>
+        </div>
+      </section>
 
       <!--==================== POPULAR ====================-->
       <section class="popular section" id="popular"></section>
