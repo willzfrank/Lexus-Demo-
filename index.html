@@ -31,7 +31,10 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./css/style.css" />
@@ -70,7 +73,7 @@
           </div>
         </div>
         <!-- Toggle button -->
-        <div class="nav__toggle" id="nav--toggle">
+        <div class="nav__toggle" id="nav-toggle">
           <i class="uil uil-align-center"></i>
         </div>
       </nav>
@@ -115,10 +118,10 @@
                 <i class="uil uil-plug"></i>
               </div>
               <h2 class="home__car-number">12h45m</h2>
-              <h3 class="home__car-name">CHARGE TIME (0->350 km)</h3>
+              <h3 class="home__car-name">CHARGE TIME</h3>
             </div>
           </div>
-          <a href="#" class="home__button">START</a>
+          <a href="#popular" class="home__button">START</a>
         </div>
       </section>
 
@@ -140,7 +143,7 @@
             </div>
           </div>
           <div class="about__data">
-            <h2 class="sectio__title about__title">
+            <h2 class="section__title about__title">
               THE FUTURE IS ALL-ELECTRIC
             </h2>
             <p class="about__description">
@@ -152,16 +155,194 @@
               navigation, audio, and drive mode select while concentrating on
               driving.
             </p>
-            <a href="#" class="button">Know More</a>
+            <a href="#popular" class="button">Know More</a>
           </div>
         </div>
       </section>
 
       <!--==================== POPULAR ====================-->
-      <section class="popular section" id="popular"></section>
+      <section class="popular section" id="popular">
+        <h2 class="section__title">
+          Choose Your Lexus Ride <br />
+          Of Our various Exquisite Brands
+        </h2>
+        <div class="popular__container swiper container">
+          <div class="swiper-wrapper">
+            <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+              <div>
+                <h1 class="popular__title">Lexu Electrified</h1>
+                <h3 class="popular__subtitle"></h3>
+                <img
+                  src="https://toyota.scene7.com/is/image/toyota/Lexus-BEV-Sport_Base-Story-desktop-1440x550-1243_BEV-SPORT_FRONT_16X9?wid=1440&hei=800"
+                  alt="lexus__electrified"
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <div class="popular__data-group">
+                    <i class="uil uil-dashboard"></i>100 km/h
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-battery-bolt"></i>71.4 kWh
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-plug"></i>Not Unveiled
+                  </div>
+                </div>
+                <h3 class="popular__price"></h3>
+                <button class="button popular__button">
+                  <i class="uil uil-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+              <div>
+                <h1 class="popular__title">ES-hybrid</h1>
+                <h3 class="popular__subtitle">Lexus ES Model</h3>
+                <img
+                  src="https://www.lexus.com/content/dam/lexus/images/models/es/2022/visualizer/300h/exterior/17-twin-v-spoke-alloy-dark-metallic-machined-finish/obsidian/large-1.jpg"
+                  alt="lexus__electrified"
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <div class="popular__data-group">
+                    <i class="uil uil-dashboard"></i>180km/h
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-battery-bolt"></i>1.6 kWh
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-plug"></i>20 hours
+                  </div>
+                </div>
+                <h3 class="popular__price">$51,900</h3>
+                <button class="button popular__button">
+                  <i class="uil uil-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+              <div>
+                <h1 class="popular__title">LC HYBRID</h1>
+                <h3 class="popular__subtitle">Lexus LC Model</h3>
+                <img
+                  src="https://www.lexus.com/content/dam/lexus/images/models/lc/2022/visualizer/500h/exterior/21-split-five-spoke-forged-alloy-polished-finish-black-accents/caviar/large-1.jpg"
+                  alt="lexus__electrified"
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <div class="popular__data-group">
+                    <i class="uil uil-dashboard"></i>250 km/h
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-battery-bolt"></i>1.1 kWh
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-plug"></i>8 hours
+                  </div>
+                </div>
+                <h3 class="popular__price">$124,300</h3>
+                <button class="button popular__button">
+                  <i class="uil uil-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+              <div>
+                <h1 class="popular__title">2022 UX HYBRID</h1>
+                <h3 class="popular__subtitle">Lexus UX Model</h3>
+                <img
+                  src="https://www.lexus.com/content/dam/lexus/images/models/ux/2023/visualizer/250h/exterior/18-inch-five-spoke-alloy-wheels-with-dark-gray-and-machined-finish-with-run-flat-tires/obsidian/large-1.jpg"
+                  alt="lexus__electrified"
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <div class="popular__data-group">
+                    <i class="uil uil-dashboard"></i>177 km/h
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-battery-bolt"></i>1.4 kWh kWh
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-plug"></i>Not Electric
+                  </div>
+                </div>
+                <h3 class="popular__price">$49,450</h3>
+                <button class="button popular__button">
+                  <i class="uil uil-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+
+            <article class="popular__card swiper-slide">
+              <div class="shape shape__smaller"></div>
+              <div>
+                <h1 class="popular__title">NX PHEV</h1>
+                <h3 class="popular__subtitle">
+                  PLUG‑IN HYBRID ELECTRIC VEHICLE
+                </h3>
+                <img
+                  src="https://www.lexus.com/content/dam/lexus/images/models/nx/2022/design/Lexus-NX-Design-reimagined-exterior-desktop-1440x800-LEX-NXG-MY22-0033.jpg"
+                  alt="lexus__electrified"
+                  class="popular__img"
+                />
+                <div class="popular__data">
+                  <div class="popular__data-group">
+                    <i class="uil uil-dashboard"></i>200 km/h
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-battery-bolt"></i>18.1 kWh
+                  </div>
+                  <div class="popular__data-group">
+                    <i class="uil uil-plug"></i>220/240V
+                  </div>
+                </div>
+                <h3 class="popular__price">$57,300</h3>
+                <button class="button popular__button">
+                  <i class="uil uil-shopping-bag"></i>
+                </button>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--==================== FEATURES ====================-->
-      <section class="features section"></section>
+      <section class="features section">
+        <h2 class="section__title">More Features</h2>
+        <div class="features__containier container grid">
+          <div class="features__group">
+            <img src="" alt="" class="features__img" />
+            <div class="features__card features__card-1">
+              <h3 class="features__card-title"></h3>
+              <p class="features__card-description"></p>
+            </div>
+
+            <div class="features__card features__card-1">
+              <h3 class="features__card-title"></h3>
+              <p class="features__card-description"></p>
+            </div>
+
+            <div class="features__card features__card-2">
+              <h3 class="features__card-title"></h3>
+              <p class="features__card-description"></p>
+            </div>
+
+            <div class="features__card features__card-3">
+              <h3 class="features__card-title"></h3>
+              <p class="features__card-description"></p>
+            </div>
+          </div>
+        </div>
+        <img src="" alt="" class="features__map" />
+      </section>
 
       <!--==================== FEATURED ====================-->
       <section class="featured section" id="featured"></section>
@@ -179,10 +360,10 @@
     <!--========== SCROLL UP ==========-->
 
     <!--=============== SCROLL REVEAL ===============-->
-    <script src=""></script>
+    <script></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP JS ===============-->
     <script src=""></script>
