@@ -130,7 +130,7 @@ let swiperPopular = new Swiper('.popular__container', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1024: {
       spaceBetween: 48,
