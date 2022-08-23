@@ -1,18 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Open+Sans:wght@400;500&display=swap');
 
 :root {
-  --white: white;
+  --white: #eeee;
   --light-yellow: #ffee80;
-  --black: black;
-  --grey: grey;
-  --background-black: rgb(41, 41, 41);
+  --black: #050606;
+  --grey: #7c7373;
+  --light-grey: #9d9d9d;
+  --background-black: #363b44;
   --light-color: rgb(206, 203, 203);
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --border: 0.1rem solid rgba(0, 0, 0, 0.1);
   --header-height: 3.5rem;
 
   /* fonts and typography */
-  --body-font: 'Poppins', sans-serif;
+  --font-header: 'Aboreto', cursive;
+  --body-font: 'Open Sans', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -41,19 +43,14 @@
 
 /* js classes */
 
-.show-menu {
-  right: 0;
-}
-
 .scroll-header {
-  border-radius: 0 0 0.5rem 0.5rem;
-  background-color: var(--black);
-  box-shadow: 0 2px 4px var(--light-color);
+  box-shadow: 0 1px 2px var(--white);
+  background: var(--black) !important;
 }
 
 /* shape  */
 .shape {
-  background-color: var(--light-color);
+  background-color: var(--background-black);
   filter: blur(112px);
   border-radius: 50%;
 }
@@ -103,6 +100,7 @@ h2,
 h3 {
   font-weight: var(--font-semi-bold);
   color: var(--white);
+  font-family: var(--font-header);
 }
 
 ul {
@@ -164,11 +162,17 @@ a {
 
 .nav__logo {
   font-size: 2.5rem;
+
   color: var(--black);
   font-weight: var(--font-medium);
   align-items: center;
   column-gap: 0.25rem;
   transition: 0.3s;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
 }
 
 .header .logo,
@@ -178,7 +182,7 @@ a {
   cursor: pointer;
 }
 
-.nav__togle {
+.nav__toggle {
   font-size: 1.25rem;
 }
 
@@ -222,6 +226,7 @@ a {
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
+  text-transform: capitalize;
 }
 
 .home__elec i {
@@ -250,13 +255,13 @@ a {
 .home__car-icon {
   font-size: 1.5rem;
   display: inline-flex;
-  background-color: var(--grey);
+  background-color: var(--background-black);
   margin-bottom: 0.75rem;
   border-radius: 50%;
   padding: 0.376rem;
   justify-content: center;
   align-items: center;
-  color: var(--light-color);
+  color: var(--white);
 }
 
 .home__car-data {
@@ -316,6 +321,22 @@ a {
   }
   50% {
     box-shadow: 0 0 24px var(--light-color);
+  }
+}
+
+.home__button:hover::before {
+  border: 2px solid var red;
+  animation: buttonHover 3s infinite;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+@keyframes buttonHover {
+  0% {
+    box-shadow: 0 0 12px red;
+  }
+  50% {
+    box-shadow: 0 0 24px red;
   }
 }
 
@@ -958,7 +979,7 @@ a {
     margin-bottom: 4rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .nav__menu {
     position: fixed;
     background-color: var(--background-black);

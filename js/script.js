@@ -1,81 +1,3 @@
-// var swiper = new Swiper('.vehicles-slider', {
-//   grabCursor: true,
-//   centeredSlides: true,
-//   spaceBetween: 20,
-//   loop: true,
-//   autoplay: {
-//     delay: 9500,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
-
-// var swiper = new Swiper('.featured-slider', {
-//   grabCursor: true,
-//   centeredSlides: true,
-//   spaceBetween: 20,
-//   loop: true,
-//   autoplay: {
-//     delay: 9500,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
-
-// var swiper = new Swiper('.review-slider', {
-//   grabCursor: true,
-//   centeredSlides: true,
-//   spaceBetween: 20,
-//   loop: true,
-//   autoplay: {
-//     delay: 9500,
-//     disableOnInteraction: false,
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
@@ -85,7 +7,8 @@ const navMenu = document.getElementById('nav-menu'),
 /* Validate if constant exists */
 if (navToggle) {
   navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu');
+    navMenu.style.right = '0';
+    navMenu.style.transition = '0.4s';
   });
 }
 
@@ -93,7 +16,8 @@ if (navToggle) {
 /* Validate if constant exists */
 if (navClose) {
   navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu');
+    navMenu.style.right = '-100%';
+    navMenu.style.transition = '0.4s';
   });
 }
 
@@ -103,7 +27,8 @@ const navLink = document.querySelectorAll('.nav__link');
 const linkAction = () => {
   const navMenu = document.getElementById('nav-menu');
   // When we click on each nav__link, we remove the show-menu class
-  navMenu.classList.remove('show-menu');
+  navMenu.style.right = '-100%';
+  navMenu.style.transition = '0.4s';
 };
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
