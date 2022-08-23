@@ -118,9 +118,6 @@ a {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  /* justify-content: center;
-  justify-self: center;
-  text-align: center; */
 }
 
 .container {
@@ -405,31 +402,85 @@ a {
   transition: 0.3s;
 }
 
-/* POPULAR */
-.popular__container {
-  padding-top: 1rem;
+/* VEHICLES */
+
+.vehicles .vehicles-slider .box {
+  text-align: center;
 }
 
-.popular__card {
-  position: relative;
-  width: 238px;
-  background-color: var(--background-black);
-  padding: 2rem 1.5rem 1.5rem;
-  border-radius: 1rem;
-  margin-bottom: 3.5rem;
-  overflow: hidden;
+.vehicles .vehicles-slider .box img {
+  width: 100%;
+  transform: scale(0.8);
+  opacity: 0.5;
+  padding-bottom: 1rem;
+  border-radius: 10px;
 }
 
-.popular__card .shape__smaller {
-  position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
+.vehicles .vehicles-slider .box .content {
+  height: 100%;
+  transform: scale(0);
 }
 
-.position__title,
-.popular__subtitle,
-.popular__img {
-  position: relative;
+.vehicles .vehicles-slider .swiper-slide-active .content {
+  /* Scaling the element to 1. */
+  transform: scale(1);
+}
+
+.vehicles .vehicles-slider .swiper-slide-active img {
+  transform: scale(1);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.vehicles .vehicles-slider .box .content h3 {
+  font-size: var(--h3-font-size);
+  padding-top: 0.5rem;
+  color: var(--light-color);
+}
+
+.vehicles .vehicles-slider .box .content .price {
+  font-size: var(--normal-font-size);
+  padding: 1rem 0;
+  font-weight: bolder;
+}
+
+.vehicles .vehicles-slider .box .content .price span {
+  color: var(--light-color);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.vehicles .vehicles-slider .box .content p {
+  font-size: 1rem;
+  color: var(--light-color);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.popular__data {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.popular__data-group {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: 1rem !important;
+}
+
+.vehicles .vehicles-slider .box .content span {
+  font-size: 1.5rem !important;
+  color: var(--yellow);
+  padding: 0 0.5rem;
 }
 
 .popular__title {
@@ -439,56 +490,9 @@ a {
 }
 
 .popular__subtitle {
-  font-size: var(--normal-font-size);
+  font-size: var(--smaller-font-size) !important;
   font-weight: var(--font-medium);
-}
-
-.popular__img {
-  width: 160px;
-  margin: 0.75rem 0 1.25rem 1.5rem;
-  transition: 0.3s;
-}
-
-.popular__data {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  gap: 0.5rem 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.popular__data-group {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.5rem;
-  font-size: var(--smaller-font-size);
-}
-
-.popular__data i {
-  font-size: 1rem;
-}
-
-.popular__price {
-  font-size: var(--h3-font-size);
-}
-
-.popular__button {
-  border: none;
-  outline: none;
-  padding: 0.75rem 1rem;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-radius: 1rem 0 1rem 0;
-  cursor: pointer;
-}
-
-.populat__button i {
-  font-size: 1.25rem;
-  /* color: var(--background-black); */
-}
-
-.popular__card:hover .popular__img {
-  transform: translateY(-0.25rem);
+  color: var(--light-color) !important;
 }
 
 /* swiper--class */
