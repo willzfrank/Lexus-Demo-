@@ -42,27 +42,6 @@ const scrollHeader = () => {
 };
 window.addEventListener('scroll', scrollHeader);
 
-// SWIPERJS
-let swiperPopular = new Swiper('.popular__container', {
-  loop: true,
-  spaceBetween: 24,
-  slidesPerView: 'auto',
-  grabCursor: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      spaceBetween: 48,
-    },
-  },
-});
-
 // VEHICLES
 
 var swiper = new Swiper('.vehicles-slider', {
@@ -91,3 +70,12 @@ var swiper = new Swiper('.vehicles-slider', {
     },
   },
 });
+
+/*==================== SHOW SCROLL TOP ====================*/
+function scrollTop() {
+  const scrollTop = document.getElementById('scroll-top');
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollTop.classList.add('show-scroll');
+  else scrollTop.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollTop);
