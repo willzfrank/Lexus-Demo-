@@ -1,0 +1,41 @@
+.aboutus--header,
+.aboutus--text {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.aboutus--text {
+  line-height: 30px;
+}
+
+.ourteam--container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.ourteam--container--box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid;
+}
+
+.ourteam--container--box img {
+  border: 1px solid var(--white);
+  object-fit: contain;
+
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
