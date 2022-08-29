@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
     <!--=============== FAVICON ===============-->
     <link
       rel="apple-touch-icon"
@@ -27,8 +26,6 @@
     <link rel="manifest" href="./favicon_io (1)/site.webmanifest" />
 
     <!--=============== REMIX ICONS ===============-->
-
-
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -37,34 +34,33 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="./aboutus.css" />
+    <link rel="stylesheet" href="./Contact.css">
 
-    <title>About us || Mavhala Vehicles</title>
-  </head>
-  <body>
+    <title>Contact || Machala Vehicles</title>
+</head>
+<body>
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="../../index.html" class="nav__logo">
-          <span>Machala</span><span>Vehicles</span>
+          <span >Machala</span><span>Vehicles</span>
         </a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item">
+            <li class="nav__item ">
               <a href="../../index.html" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link"
-                >About Us</a
-              >
+              <a href="../AboutUs/aboutus.html" class="nav__link">About Us</a>
             </li>
             <li class="nav__item">
               <a href="../Popularcars/Popular.html" class="nav__link">Popular Cars</a>
             </li>
             
             <li class="nav__item">
-              <a href="../../pages/Contact/Contact.html" class="nav__link">Contact</a>
+              <a href="#" class="nav__link">Contact</a>
             </li>
           </ul>
           <div class="nav__close" id="nav-close">
@@ -77,54 +73,40 @@
         </div>
       </nav>
     </header>
-    <main class="container section">
-      <h1 class="aboutus--header">We are Machala</h1>
-      <p class="aboutus--text">
-        At Machala Vehicles, we want to solve the biggest problems in being
-        mobile. We believe there is a better way in providing good and quality
-        automobiles. A more valuable, less invasive way where customers are
-        pleased rather than stressed. We're obsessively passionate about it, and
-        our mission is to help people achive it. We focus on provide only the
-        best automobiles . It`s one of the least understood and least
-        transparent aspects of delivering a great vehicle brand , and we see
-        that as an opportunity . We`re excited to bring to you the best
-        automobiles for everyone through our various outlets, websites and
-        applications.
-      </p>
-
-      <section class="ourteam section">
-        <h2 class="aboutus--header">Our Team</h2>
-        <div class="container ourteam--container">
-          <div class='ourteam--container--box'>
-            <div class='image--container'>
-              <img src="../../image/car-1.png" alt="" />
+    <section class="contact section">
+        <div class="cont container">
+            <div class="contact-text">
+                <p style='font-family: var(--font-header);'>Drop your inquiry here and our experts will get back to you.</p>
+                <h6>Address</h6>
+                <p class="address">
+                    <i class="uil uil-location-pin-alt"></i> 32, Amazing Grace road, ikoyi, Lagos.
+                </p>
+                <h6>Email</h6>
+                <div style='display: flex; '>
+                    <i class="uil uil-envelope-alt" style='margin-right: 5px;'></i> <p class="mail">fakemachalavehiclesemail@gmail.com</p>
+                </div>
+                
+                <ul class="footer__social">
+                    <a href="" target="_blank" class="footer__social-link"><i class="uil uil-facebook"></i></a>
+                    <a href="" target="_blank" class="footer__social-link"><i class="uil uil-twitter"></i></a>
+                    <a href="" target="_blank" class="footer__social-link"><i class="uil uil-instagram-alt"></i></a>
+                    <!-- <a href="" target="_blank" class="footer__social-link"></a> -->
+                </ul>
+               
             </div>
-
-            <p><strong>Willz Frank</strong></p>
-            CEO, Machala Vehicles
-          </div>
-
-          <div class='ourteam--container--box'>
-            <div class='image--container'>
-              <img src="../../image/car-1.png" alt="" />
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                    <input type="submit" class='contact--button' value="submit">
+                </form>
             </div>
-
-            <p><strong>Oluyimika Oluwatobiloba David</strong></p>
-            Marketing Lead, Machala Vehicles
-          </div>
-
-          <div class='ourteam--container--box'>
-            <div class='image--container'>
-              <img src="../../image/car-1.png" alt="" />
-              
-            </div
-
-            <p><strong>Fowowe Akorede Sunday</strong></p>
-            Head Branch, Machala Vehicles
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
@@ -132,7 +114,7 @@
       <div class="shape shape__small"></div>
       <div class="footer__container container grid">
         <div class="footer__content">
-            <a href="../../index.html" class="nav__logo footer__logo">
+            <a href="#" class="nav__logo footer__logo">
           <span >Machala</span><span>Vehicles</span>
           </a>
           <p class="footer__description">
@@ -144,7 +126,7 @@
         <div class="footer__content">
           <h3 class="footer__title">Company</h3>
           <ul class="footer__links">
-            <li><a href="" class="footer__link"><About/a></li>
+            <li><a href="../AboutUs/aboutus.html" class="footer__link"><About/a></li>
             <li><a href="" class="footer__link">Cars</a></li>
             <li><a href="" class="footer__link">History</a></li>
             <li><a href="" class="footer__link">Shop</a></li>
@@ -156,8 +138,8 @@
           <ul class="footer__links">
             <li><a href="" class="footer__link">Request a Quote</a></li>
             <li><a href="" class="footer__link">Find a dealer</a></li>
-            <li><a href="../Contact/Contact.html" class="footer__link">Contact Us</a></li>
-            <li><a href="" class="footer__link">Services</a></li>
+            <li><a href="./pages/Contact/Contact.html" class="footer__link">Contact Us</a></li>
+            <li><a href="../../index.html" class="footer__link">Services</a></li>
           </ul>
         </div>
 
@@ -177,5 +159,5 @@
     </footer>
     <!--=============== MAIN JS ===============-->
     <script src="../../js/script.js"></script>
-  </body>
+</body>
 </html>

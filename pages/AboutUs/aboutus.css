@@ -10,7 +10,7 @@
 
 .ourteam--container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column; */
   gap: 50px;
   margin-bottom: 100px;
 }
@@ -24,7 +24,6 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-  border: 2px solid;
 }
 
 .ourteam--container--box img {
