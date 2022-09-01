@@ -85,3 +85,16 @@ const loader = document.getElementById('preloader');
 window.addEventListener('load', () => {
   loader.style.display = 'none';
 });
+
+// SCROLL REVEAL
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal('.home__title');
+sr.reveal('.home__subtitle', { delay: 500 });
+sr.reveal('.home__subtitle', { delay: 500 });

@@ -30,6 +30,7 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
 
+      
     <!--=============== SWIPER CSS ===============-->
     <link
       rel="stylesheet"
@@ -38,6 +39,11 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./css/style.css" />
+
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <title> MachalaVehicles || A NIIT demo car website</title>
   </head>
@@ -88,11 +94,11 @@
         <div class="shape shape__small"></div>
         <div class="home__container container grid">
           <div class="home__data">
-            <h1 class="home__title">Electric Adventure</h1>
-            <h2 class="home__subtitle">RZ 450e</h2>
+            <h1 class="home__title wow animate__animated animate__bounce animate__delay-2s">Electric Adventure</h1>
+            <h2 class="home__subtitle wow animate__animated animate__bounce animate__delay-3s">RZ 450e</h2>
             <h3 class="home__elec">
               <i class="uil uil-bolt-alt"></i>Electric car
-              Dont deny yourself the pleasure of driving the best premium cars from arou nd the world here and now.
+              Dont deny yourself the pleasure of driving the best premium cars from around the world here and now.
             </h3>
           </div>
           <img
@@ -101,21 +107,21 @@
             class="home__img"
           />
           <div class="home__car">
-            <div class="home__car-data">
+            <div class="home__car-data  wow animate__animated animate__flash animate__delay-2s">
               <div class="home__car-icon">
                 <i class="uil uil-dashboard"></i>
               </div>
               <h2 class="home__car-number">160 km/h</h2>
               <h3 class="home__car-name">TOP SPEED</h3>
             </div>
-            <div class="home__car-data">
+            <div class="home__car-data wow animate__animated animate__flash animate__delay-3s">
               <div class="home__car-icon">
                 <i class="uil uil-battery-bolt"></i>
               </div>
               <h2 class="home__car-number">75.0 kWh</h2>
               <h3 class="home__car-name">BATTERY CAPACITY</h3>
             </div>
-            <div class="home__car-data">
+            <div class="home__car-data wow animate__animated animate__flash animate__delay-4s">
               <div class="home__car-icon">
                 <i class="uil uil-plug"></i>
               </div>
@@ -127,7 +133,7 @@
           <div class='book--arrow'>
             <p>Book a test Drive</p><i class="uil uil-arrow-right"></i>
           </div>
-          <div>
+          <div class='wow animate__animated animate__flash animate__delay-5s'>
               <a href="#popular" class="home__button">START</a>
           </div>
 
@@ -141,21 +147,21 @@
       <section class="section services" id="section">
         <h2>What we Offer ?</h2>
         <div class="container services__container">
-          <div class="repair services__container--box">
+          <div class="repair services__container--box wow animate__animated animate__backInUp animate__delay-1s">
             <i class="uil uil-wrench"></i>
             <div>
               <h3>Repair and Parts </h3>
               <p>We offer repairs to vehicles purchased from us brands as well as sell availables parts needed to make your ride a dreamy one.</p>
             </div>
           </div>
-          <div class="sell services__container--box">
+          <div class="sell services__container--box wow animate__animated animate__backInUp animate__delay-2s">
             <i class="uil uil-usd-circle"></i>
             <div>
               <h3>Buy and Sell  </h3>
               <p>We offer a variety of exotic automobiles of various brands for sales at a very reasonable price. in doing so we also purchase cars when due for sale.  </p>
             </div>
           </div>
-          <div class="part services__container--box">
+          <div class="part services__container--box wow animate__animated animate__backInUp animate__delay-3s">
             <i class="uil uil-cog"></i>
             <div>
               <h3>Available Parts </h3>
@@ -170,7 +176,7 @@
 
       <section class="about section" id="about">
         <div class="about__container container grid">
-          <div class="about__group">
+          <div class="about__group wow animate__animated animate__backInLeft animate__delay-2s">
             <img
               src="https://toyota.scene7.com/is/image/toyota/lexus-rz-design-desktop-1440x800-LEX-RZV-MY23-0012?wid=1440&hei=800"
               alt="lexus__features"
@@ -184,7 +190,7 @@
               </p>
             </div>
           </div>
-          <div class="about__data">
+          <div class="about__data wow animate__animated animate__backInRight animate__delay-3s">
             <h2 class="section__title about__title">
               THE FUTURE IS ALL-ELECTRIC
             </h2>
@@ -512,11 +518,13 @@
       </span>
     </footer>
 
-    <!--========== SCROLL UP ==========-->
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="./js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
     
 
-    <!--=============== SCROLL REVEAL ===============-->
-    <script></script>
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
