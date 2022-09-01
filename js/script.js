@@ -79,3 +79,9 @@ function scrollTop() {
   else scrollTop.classList.remove('show-scroll');
 }
 window.addEventListener('scroll', scrollTop);
+
+const loader = document.getElementById('preloader');
+
+window.addEventListener('load', () => {
+  loader.style.display = 'none';
+});

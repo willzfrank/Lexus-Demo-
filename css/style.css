@@ -40,6 +40,18 @@
   }
 }
 
+/* preloader */
+
+#preloader {
+  background: white url(../image/perfectcar.gif) no-repeat center center;
+  background-size: 40%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  cursor: none !important;
+}
+
 /* js classes */
 
 .scroll-header {
